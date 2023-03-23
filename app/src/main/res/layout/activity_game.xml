@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milky_light_green"
+    tools:context=".game"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/gam_materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.material.appbar.MaterialToolbar>
+
+
+    <TextView
+        android:id="@+id/gam_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textColor="@color/Green2"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gam_materialToolbar" />
+
+
+    <TextView
+        android:id="@+id/gam_tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/gam_tv_welc"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gam_tv_score" />
+
+
+    <TextView
+        android:id="@+id/gam_tv_username_and_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Name"
+        android:textColor="@color/Green"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@+id/gam_tv_welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gam_GL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:padding="@dimen/_15sdp"
+        app:columnCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gam_tv_username_and_age"
+        app:orientation="horizontal"
+        app:rowCount="3">
+
+        <TextView
+            android:id="@+id/gam_gl_tv_1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/gam_gl_tv_2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/gam_gl_tv_3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/gam_gl_tv_4"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/gam_gl_tv_5"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 5"
+            android:textColor="@color/custom_T_red"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/gam_gl_tv_6"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/gam_gl_tv_7"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 7"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/gam_gl_tv_8"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 8"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/gam_gl_tv_9"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/shape_game_number_boxes"
+            android:gravity="center"
+            android:text="num 9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1">
+
+        </TextView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <EditText
+        android:id="@+id/gam_et_answer"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:ems="1"
+        android:hint="@string/gam_et_answer"
+        android:inputType="number"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gam_GL" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gam_btn_checkAnswer"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textSize="@dimen/_10ssp"
+        android:text="@string/gam_btn_check"
+        android:background="@drawable/shape_buttons"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gam_et_answer"
+        app:layout_constraintTop_toBottomOf="@+id/gam_GL" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gam_btn_reshuffle"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textSize="@dimen/_10ssp"
+        android:background="@drawable/shape_buttons"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/gam_btn_reshuffle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gam_et_answer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

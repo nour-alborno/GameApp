@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">gameapp</string>
+    <!--Login Activity-->
+    <string name="log_ET1_username">User Name</string>
+    <string name="log_ET2_pass">Password</string>
+    <string name="log_login">Login</string>
+    <string name="log_register">Register</string>
+    <string name="log_rememebrinfo">Remember me?</string>
+
+    <string name="password_error">Check Your Password</string>
+    <string name="userName_error">Check your User Name</string>
+    <string name="ivalid_info_error">Invalid Information</string>
+
+
+
+    <!--Register Activity-->
+    <string name="reg_name">Full name</string>
+    <string name="reg_email">Email address</string>
+    <string name="reg_username">Username</string>
+    <string name="reg_passward">Password</string>
+    <string name="reg_re_pass">Re_pass</string>
+    <string name="reg_country">Country</string>
+    <string name="reg_BD">Birthdate</string>
+    <string name="reg_male">Male</string>
+    <string name="reg_female">Female</string>
+    <string name="reg_save">Save</string>
+
+    <string name="character_error">Use only English characters between 8 to 20 letter</string>
+    <string name="country_error">Choose a country</string>
+    <string name="email_error">Not a valid email</string>
+    <string name="BD_error">Pick your birthdate</string>
+    <string name="password_strength_error">Password is weak. It must contain Capital ans small English letters, special characters,
+     numbers, and its length should be between 8 and 20 letter
+    </string>
+    <string name="pic_error">Pick an image</string>
+    <string name="passMatch_error">Incorrect password</string>
+    <string name="date_error">Not a date</string>
+
+
+    <!--countries Array-->
+    <string-array name="countries">
+        <item>Country</item>
+        <item>Palestine</item>
+        <item>Egypt</item>
+        <item>Syria</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>Russia</item>
+        <item>Jordan</item>
+    </string-array>
+
+    <!-- Game Activity-->
+    <string name="gam_tv_score">Score </string>
+    <string name="gam_tv_welc">Welcome...</string>
+    <string name="gam_tv_name">username</string>
+    <string name="gam_tv_age">20</string>
+    <string name="gam_btn_check">Check</string>
+    <string name="gam_et_answer">Enter a number</string>
+    <string name="gam_btn_reshuffle">New Game</string>
+
+
+
+            <!--Tool Bar Menu-->
+            <string name="Menu_Settings">Settings</string>
+            <string name="Menu_Logout">Logout</string>
+
+    <string name="gam_pressBack">Press back again to exit</string>
+
+
+
+    <!--Settings Activity-->
+    <string name="set_btn_show_all">Show all games</string>
+    <string name="set_btn_show_last">Show last game date</string>
+    <string name="set_btn_change">Change password</string>
+    <string name="set_btn_clear">Clear game history</string>
+
+    <string name="set_Dialoge_title">Clear History</string>
+    <string name="set_Dialoge_message">Are you sure you want to delete your games history?</string>
+
+    <string name="set_lastDate">No games played yet</string>
+
+                <string name="Dialoge_postive_btn">Yes</string>
+                <string name="Dialoge_negative_btn">Cancel</string>
+
+    <!--Custom toast for game result-->
+    <string name="CT_game_True">Congratulations!</string>
+    <string name="CT_game_False">Ops!</string>
+
+
+    <!--Dialogu Change password activity-->
+    <string name="ChangePass_Dialog_title">Confirm password Changing</string>
+    <string name="ChangePass_Dialog_message">Are you sure you want to change your password?</string>
+
+
+    <!--Change Password-->
+    <string name="CPA_old_pass">Old Password</string>
+    <string name="CPA_new_pass">Enter New Password</string>
+    <string name="CPA_new_pass2">Re_enter New Password</string>
+    <string name="CPA_btn_save">Save</string>
+
+
+
+
+</resources>

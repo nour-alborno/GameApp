@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings"
+    android:background="@drawable/shape_activity_backgroun"
+    android:padding="@dimen/_15sdp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/set_btn_showgames"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:textColor="@color/white"
+        android:text="@string/set_btn_show_all"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/shape_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/set_btn_lastgame"
+        android:layout_width="@dimen/_250sdp"
+        android:background="@drawable/shape_buttons"
+        android:layout_height="@dimen/_50sdp"
+        android:text="@string/set_btn_show_last"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/set_btn_showgames"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/set_btn_changepass"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_buttons"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/set_btn_change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_btn_lastgame" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/set_btn_clearhistory"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/shape_buttons"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/white"
+        android:text="@string/set_btn_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_btn_changepass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

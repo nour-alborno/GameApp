@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">gameapp</string>
+    <!--Login Activity-->
+    <string name="log_ET1_username">اسم المستخدم</string>
+    <string name="log_ET2_pass">كلمة المرور</string>
+    <string name="log_login">سجل الدخول</string>
+    <string name="log_register">تسجيل حساب</string>
+    <string name="log_rememebrinfo">تذكرني؟</string>
+
+    <string name="password_error">تحقق من كلمة المرور</string>
+    <string name="userName_error">تحقق من اسم المستخدم</string>
+    <string name="ivalid_info_error">تحقق من المعلومات</string>
+
+
+    <!--Register Activity-->
+    <string name="reg_name">إسمك كاملاً</string>
+    <string name="reg_email">البريد الإلكتروني</string>
+    <string name="reg_username">اسم المستخدم</string>
+    <string name="reg_passward">كلمة المرور</string>
+    <string name="reg_re_pass">أعد كلمة المرور</string>
+    <string name="reg_country">الدولة</string>
+    <string name="reg_BD">تاريخ الميلاد</string>
+    <string name="reg_male">ذكر</string>
+    <string name="reg_female">أنثى</string>
+    <string name="reg_save">إحفظ</string>
+
+    <string name="character_error">  استخدم حروف إنجليزية فقط ما بين 8 إلى 20 حرف</string>
+    <string name="country_error">إختر دولة</string>
+    <string name="email_error">الإيميل غير صحيح</string>
+    <string name="BD_error">إختر تاريخ ميلادك</string>
+    <string name="password_strength_error"> كلمة المررور ضعيفة. يجب أن تحتوي على احرف انجليزية كبيرة وصغيرة، رموز، أرقام، وطولها ما بين 8 إلى 20 حرف
+    </string>
+    <string name="pic_error">إختر صورة</string>
+    <string name="passMatch_error">تأكد من كلمة المرور</string>
+    <string name="date_error">إختر تاريخ</string>
+
+    <!--countries Array-->
+    <string-array name="countries">
+        <item>الدولة</item>
+        <item>فلسطين</item>
+        <item>مصر</item>
+        <item>سوريا</item>
+        <item>أمريكا</item>
+        <item>بريطانيا</item>
+        <item>روسيا</item>
+        <item>الأردن</item>
+    </string-array>
+
+    <!-- Game Activity-->
+    <string name="gam_tv_score"> النتيجة</string>
+    <string name="gam_tv_welc">أهلاً وسهلاً…</string>
+    <string name="gam_tv_name">إسم المستخدم</string>
+    <string name="gam_tv_age">العمر</string>
+    <string name="gam_btn_check">تحقق</string>
+    <string name="gam_et_answer">أدخل رقماً</string>
+    <string name="gam_btn_reshuffle">لعبة جديدة</string>
+
+
+            <!--Tool Bar Menu-->
+            <string name="Menu_Settings">الإعدادات</string>
+            <string name="Menu_Logout">تسجيل الخروج</string>
+
+    <string name="gam_pressBack">إضغط للخلف مجدداً للخروج من اللعبة</string>
+
+
+
+    <!--Settings Activity-->
+    <string name="set_btn_show_all">أظهر سجل الالعاب</string>
+    <string name="set_btn_show_last">تاريخ أخر لعبة</string>
+    <string name="set_btn_change">غير كلمة المرور</string>
+    <string name="set_btn_clear">إحذف سجل اللعب</string>
+
+    <string name="set_Dialoge_title">إحذف سجل الألعاب</string>
+    <string name="set_Dialoge_message">هل أنت متأكد من رغبتك بحذف سجل الألعاب؟</string>
+
+    <string name="Dialoge_postive_btn">أجل</string>
+    <string name="Dialoge_negative_btn">أغلق</string>
+
+    <string name="set_lastDate">لم تلعب لعبة بعد</string>
+
+    <!--Custom toast for game result-->
+    <string name="CT_game_True">مبروك!</string>
+    <string name="CT_game_False">حاول مرة أُخرى!</string>
+
+    <string name="ChangePass_Dialog_title">تأكيد تغيير كلمة المرور</string>
+    <string name="ChangePass_Dialog_message">هل أنت متأكد برغبتك بتغيير كلمة المرور؟</string>
+
+
+    <!--Change Password-->
+    <string name="CPA_old_pass">كلمة المرور القديمة</string>
+    <string name="CPA_new_pass">أدخل كلمة المرور الجديدة</string>
+    <string name="CPA_new_pass2">أعد إدخال كلمة المرور الجديدة</string>
+    <string name="CPA_btn_save">حفظ</string>
+</resources>
